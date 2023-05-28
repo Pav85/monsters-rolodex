@@ -11,7 +11,25 @@ class App extends Component {
       monsters = [],
     }
   }
+
+  console.log('constructor')
+
+  componentDidMount() {
+    console.log('componentDidMount');
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then((response) => response.json())
+    .then((users) => 
+    this.setState(
+      () => {
+        return { monsters: users };
+      },
+      () => {
+        console.log(this.state)
+      }
+    )
+    );
+  }
 };
-console.log('constructor')
+
 
 export default App;
