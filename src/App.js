@@ -33,7 +33,11 @@ class App extends Component {
     console.log("render");
     return (
       <div className="App">
-        <input />
+        <input
+          className="search-box"
+          type="search"
+          placeholder="search monsters"
+        />
         {this.state.monsters.map((monster) => {
           return (
             <div key={monster.id}>
