@@ -4,7 +4,7 @@ class SerachBox extends Component {
   render() {
     return (
       <input
-        // className="search-box"
+        className={`serach-box ${this.props.className}`}
         type="search"
         placeholder={this.props.placeholder}
         onChange={this.props.onChangeHandler}
