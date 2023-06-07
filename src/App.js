@@ -1,6 +1,7 @@
 import { Component } from "react";
 
 import CardList from "./components/card-list/card-list.component";
+import SerachBox from "./components/search-box/search-box.compomet";
 import "./App.css";
 
 class App extends Component {
@@ -54,6 +55,7 @@ class App extends Component {
             </div>
           );
         })} */}
+        <SerachBox />
         <CardList monsters={filteredMonsters} />
       </div>
     );
