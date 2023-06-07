@@ -2,7 +2,7 @@ import { Component } from "react";
 
 import "./search-box.styles.css";
 
-class SerachBox extends Component {
+class SearchBox extends Component {
   render() {
     return (
       <input
@@ -15,4 +15,4 @@ class SerachBox extends Component {
   }
 }
 
-export default SerachBox;
+export default SearchBox;
