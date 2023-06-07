@@ -48,14 +48,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        {/* {filteredMonsters.map((monster) => {
-          return (
-            <div key={monster.id}>
-              <h1>{monster.name}</h1>
-            </div>
-          );
-        })} */}
-        <SerachBox />
+        <SerachBox onChangeHandler={onSearchChange} />
         <CardList monsters={filteredMonsters} />
       </div>
     );
